@@ -28,5 +28,7 @@ This research results in increased hearing aid processing power and programmabil
 - ***What is new***: The core technical difference between the hearing aids studied in this experiment and ordinary hearing aids is the processing method inside the chip for the sound signals collected in by the microphone. 
 - ***What will build***: Raspberry Pi-based hearing aids can be extended with software-controlled features to include Alexa voice assistant, sound source location and tracking, noise reduction, binaural processing, reverberation cancellation. 
 
-
+  
+![Image of Yaktocat](https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Deliverables.png)
+  
 ## How to start
