@@ -32,7 +32,7 @@ This research results in increased hearing aid processing power and programmabil
 
 3. Upload the file of Pi OS to Raspberry Pi Imager. Make sure to check the target location of the SD Card that is located on the home page of Raspberry Pi OS Imager. Click 'WRITE' to install.
 
-  ![Imager](https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png)
+    <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png width=1576 hight=620>
 
 
 ### :keyboard: ReSpeaker 4-Mics Pi HAT setup
