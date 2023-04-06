@@ -15,7 +15,8 @@ This research results in increased hearing aid processing power and programmabil
 - ***What is new***: The core technical difference between the hearing aids studied in this experiment and ordinary hearing aids is the processing method inside the chip for the sound signals collected in by the microphone. 
 - ***What will build***: Raspberry Pi-based hearing aids can be extended with software-controlled features to include Alexa voice assistant, sound source location and tracking, noise reduction, binaural processing, reverberation cancellation. 
 
-  <div align=center><img width="876" height="380" src="https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/deliverable.png"/></div>
+  <img alt="Deliverable" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/deliverable.png width=2190 hight=1030>
+ 
 
 </details>
 
@@ -31,7 +32,7 @@ This research results in increased hearing aid processing power and programmabil
 
 3. Upload the file of Pi OS to Raspberry Pi Imager. Make sure to check the target location of the SD Card that is located on the home page of Raspberry Pi OS Imager. Click 'WRITE' to install.
 
-    <div align=center><img width="613" height="241" src="https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png"/></div>
+  ![Imager](https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png)
 
 
 ### :keyboard: ReSpeaker 4-Mics Pi HAT setup
