@@ -34,7 +34,7 @@ This research results in increased hearing aid processing power and programmabil
 
     <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png width=1576 hight=620>
 
-
+&nbsp;
 ### :keyboard: ReSpeaker 4-Mics Pi HAT setup
 
 1. Download the Seeed voice card source code
@@ -94,5 +94,11 @@ usbstream:CARD=seeed4micvoicec
     USB Stream Output
 ```
 
-  
+3. Adjust the microphone volume
+
+```
+alsamixer
+``` 
+  &nbsp;
+   <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png width=1576 hight=620>
 </details>
