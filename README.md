@@ -54,7 +54,45 @@ cd seeed-voicecard
 arecord -L
 ```
 
-<div align=center><img width="615" height="540" src="https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Seeed-Voicecard.png"/></div>
+The details of soundcard should show like this:
+
+```
+pi@raspberrypi:~ $ cd seeed-voicecard
+pi@raspberrypi:~/seeed-voicecard $ arecord -L
+null
+    Discard all samples (playback) or generate zero samples (capture)
+jack
+    JACK Audio Connection Kit
+pulse
+    PulseAudio Sound Server
+default
+playback
+ac108
+usbstream:CARD=b1
+    bcm2835 HDMI 1
+    USB Stream Output
+usbstream:CARD=Headphones
+    bcm2835 Headphones
+    USB Stream Output
+sysdefault:CARD=seeed4micvoicec
+    seeed-4mic-voicecard, bcm2835-12s-ac10x-codeco ac10x-codec@-0
+    Default Audio Device
+dmix:CARD=seeed4micvoicec,DEV=0
+    seeed-4mic-voicecard, bcm2835-12s-ac10x-codeco ac10x-codec@-0
+    Direct sample mixing device
+dsnoop:CARD=seeed4micvoicec,DEV=0
+    seeed-4mic-voicecard, bcm2835-12s-ac10x-codeco ac10x-codec@-0
+    Direct sample snooping device
+hw:CARD=seeed4micvoicec,DEV=0
+    seeed-4mic-voicecard, bcm2835-12s-ac10x-codeco ac10x-codec@-0
+    Direct hardware device without any conversions
+plughw:CARD=seeed4micvoicec,DEV=0
+    seeed-4mic-voicecard, bcm2835-12s-ac10x-codeco ac10x-codec@-0
+    Hardware device with all software conversions
+usbstream:CARD=seeed4micvoicec
+    seeed-4mic-voicecard
+    USB Stream Output
+```
 
   
 </details>
