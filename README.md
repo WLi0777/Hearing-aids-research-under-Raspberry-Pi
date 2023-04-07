@@ -125,21 +125,35 @@ This research results in increased hearing aid processing power and programmabil
 <p align="center">
 <img alt="audacity" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/audacity.png width=510 hight=376>
   
-5. Raspberry Pi configuration
 
-    :headphones: Set headphone for output，PI SSH and I2C to be enabled
+ 5. Raspberry Pi configuration setup 
+     Set Headphone as output, SPI SSH and I2C to be enabled.
+ 
+ 6. Check number
+ 
+    ```
+    arecord -l
+    ``` 
+ 
+    ```
+    pi@raspberrypi:~ $ arecord -l
+    **** List of CAPTURE Hardware Devices ****
+    card 2: seeed4micvoicec [seeed-4mic-voicecard], device 0: bcm2835-i2s-ac10x-code
+    c0 ac10x-codec0-0 [bcm2835-i2s-ac10x-codec0 ac10x-codec0-0]
+      Subdevices: 1/1
+      Subdevice #0: subdevice #0
+    ``` 
     
-<p align="center">
-<img alt="headphone" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Headphonesetup.png width=648 hight=318>
 
-    :wrench: Set SPI SSH and I2C to be enabled
-    
-<p align="center">
-<img alt="Interface" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Interface.png width=431 hight=366>
+    :pushpin: Voicecard represents as **hw:2,0**
+&nbsp;
 
 
 
-    :pushpin: Install pyaudio
+    ```
+    aplay -l
+    ``` 
+
     
 
    
