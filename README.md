@@ -131,9 +131,13 @@ This research results in increased hearing aid processing power and programmabil
  
  6. Check number
  
+    :pushpin: Voicecard represents as **hw:2,0**
+&nbsp;
+ 
     ```
     arecord -l
     ``` 
+
  
     ```
     pi@raspberrypi:~ $ arecord -l
@@ -143,22 +147,62 @@ This research results in increased hearing aid processing power and programmabil
       Subdevices: 1/1
       Subdevice #0: subdevice #0
     ``` 
-    
 
-    :pushpin: Voicecard represents as **hw:2,0**
-&nbsp;
-
-
+     :pushpin: Headphone represents as **hw:1,0**
+&nbsp;    
 
     ```
     aplay -l
     ``` 
 
-    
-
+    ```
+    pi@raspberrypi:~ $ aplay -l
+    **** List of PLAYBACK Hardware Devices ****
+    card 0: b1 [bcm2835 HDMI 1], device 0: bcm2835 HDMI 1 [bcm2835 HDMI 1]
+      Subdevices: 4/4
+      Subdevice #0: subdevice #0
+      Subdevice #1: subdevice #1
+      Subdevice #2: subdevice #2
+      Subdevice #3: subdevice #3
+    card 1: Headphones [bcam2835 Headphones], device 0: bcm2835 Headphones [bcm2835 Headphones]
+      Subdevices: 4/4
+      Subdevice #0: subdevice #0
+      Subdevice #1: subdevice #1
+      Subdevice #2: subdevice #2
+      Subdevice #3: subdevice #3
+    ``` 
    
 
+    :pencil2: Reset the variables in the default sound card
+
+
+    ```
+    sudo nano /home/pi/.asoundrc
+    ``` 
+ 
+    ```
+    pcm.!default {
+      type asym
+      playback.pcm {
+        type plug
+        slave.pcm "hw:1,0"
+      }
+      capture.pcm {
+        type plug
+        slave.pcm "hw:2,0"
+      }
+    }
     
-
-
+    pcm.output {
+      type hw
+      card 1
+    }
+ 
+    ctl.!default {
+      type hw
+      card 0
+    }
+    ``` 
+ 
+ 
 </details>
