@@ -113,11 +113,16 @@ audacity
   &nbsp;
    <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/audacity.png width=638 hight=470>
   
-5. Set headphone for output
-```
-sudo raspi-config
-``` 
+5. Raspberry Pi configuration
+
+
+
+    ```
+    sudo raspi-config
+    ``` 
+    
   &nbsp; 
+  <p align="center">
   <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Headphonesetup.png width=648 hight=318>
 
 6. Check whether the sound card can record, and whether the headphone output with a 3s demo
