@@ -23,7 +23,7 @@ This research results in increased hearing aid processing power and programmabil
 <details id=1>
 <summary><h2>Step 1: Raspbian and ReSpeaker 4-Mic Array setup</h2></summary>
   
-### :keyboard: Burn Raspbian on SD card (MacOS)
+### :floppy_disk: Burn Raspbian on SD card (MacOS)
 
 1. Go to [Raspberry Pi OS](https://www.raspberrypi.com/software/), obtain and install the .img file for Raspberry Pi Imager.
 2. Go to [Index of Raspbian](https://downloads.raspberrypi.org/raspbian/images/), select 'raspbian-2020-02-14', download '2020-02-13-raspbian-buster.zip'.
@@ -35,7 +35,7 @@ This research results in increased hearing aid processing power and programmabil
     <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png width=757 hight=298>
 
 &nbsp;
-### :keyboard: ReSpeaker 4-Mics Pi HAT setup
+###  :sound: ReSpeaker 4-Mics Pi HAT setup
 
 1. Download the Seeed voice card source code
 
@@ -103,4 +103,29 @@ alsamixer
    <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/AlsaMixer.png width=711 hight=424>
 
 
+4. Install audacity for recording
+  
+```
+sudo apt update
+sudo apt install audacity 
+audacity
+``` 
+  &nbsp;
+   <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/audacity.png width=638 hight=470>
+  
+5. Set headphone for output
+```
+sudo raspi-config
+``` 
+  &nbsp; 
+  <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Headphonesetup.png width=648 hight=318>
+
+6. Check whether the sound card can record, and whether the headphone output with a 3s demo
+
+```
+arecord -d 3 demo.wav 
+aplay demo.wav
+``` 
+
+&nbsp; 
 </details>
