@@ -15,6 +15,7 @@ This research results in increased hearing aid processing power and programmabil
 - ***What is new***: The core technical difference between the hearing aids studied in this experiment and ordinary hearing aids is the processing method inside the chip for the sound signals collected in by the microphone. 
 - ***What will build***: Raspberry Pi-based hearing aids can be extended with software-controlled features to include Alexa voice assistant, sound source location and tracking, noise reduction, binaural processing, reverberation cancellation. 
 
+  <p align="center">
   <img alt="Deliverable" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/deliverable.png width=2190 hight=1030>
  
 
@@ -32,7 +33,8 @@ This research results in increased hearing aid processing power and programmabil
 
 3. Upload the file of Pi OS to Raspberry Pi Imager. Make sure to check the target location of the SD Card that is located on the home page of Raspberry Pi OS Imager. Click 'WRITE' to install.
 
-    <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png width=757 hight=298>
+  <p align="center">  
+  <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/Raspberry%20Imaging.png width=757 hight=298>
 
 &nbsp;
 ###  :sound: ReSpeaker 4-Mics Pi HAT setup
@@ -100,6 +102,7 @@ usbstream:CARD=seeed4micvoicec
 alsamixer
 ``` 
   &nbsp;
+   <p align="center">
    <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/AlsaMixer.png width=711 hight=424>
 
 
@@ -111,6 +114,7 @@ sudo apt install audacity
 audacity
 ``` 
   &nbsp;
+   <p align="center">
    <img alt="Imager" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/audacity.png width=638 hight=470>
   
 5. Raspberry Pi configuration
