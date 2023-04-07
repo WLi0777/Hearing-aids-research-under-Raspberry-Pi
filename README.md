@@ -126,10 +126,10 @@ This research results in increased hearing aid processing power and programmabil
 <img alt="audacity" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/audacity.png width=510 hight=376>
   
 
- 5. Raspberry Pi configuration setup 
+5. Raspberry Pi configuration setup 
      Set Headphone as output, SPI SSH and I2C to be enabled.
  
- 6. Check number
+6. Check number
  
     :pushpin: Voicecard represents as **hw:2,0**
 &nbsp;
@@ -203,6 +203,29 @@ This research results in increased hearing aid processing power and programmabil
       card 0
     }
     ``` 
+ 
+  
+    :keyboard: Enter **Ctrl+X**, press **Y**, and **Enter** to exit
+ 
+
+ 7. Record and display
+ 
+     Create a demo under home / PI Wav recording file, say 3 seconds, it will start to record
+ 
+
+    ```
+    arecord -d 3 demo.wav
+    ```
+ 
+    To display the demo.wav:
+ 
+
+ 
+    ```
+    aplay demo.wav
+    ```
+
+
  
  
 </details>
