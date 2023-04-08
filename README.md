@@ -210,14 +210,14 @@ This research results in increased hearing aid processing power and programmabil
 
  7. Record and display
  
-     Create a demo under home / PI Wav recording file, say 3 seconds, it will start to record
+    :open_file_folder: Create a demo under home / PI Wav recording file, say 3 seconds, it will start to record
  
 
     ```
     arecord -d 3 demo.wav
     ```
  
-    To display the demo.wav:
+    :sound: To display the demo.wav:
  
 
  
@@ -226,6 +226,128 @@ This research results in increased hearing aid processing power and programmabil
     ```
 
 
+8. APA102 LED
+
+    This section is a simple test to see if the LEDs on the sound card are working.
+
+    :pushpin: Install spidev gpiozero and pixel
+&nbsp;
+ 
+    ```
+    pip install spidev gpiozero
+    git clone --depth 1 https://github.com/respeaker/pixel_ring.git cd pixel_ring
+    pip install -U -e .
+    cd examples/
+    ``` 
+
+    :runner: Run the demo to see LEDs blink
+&nbsp;
+ 
+    ```
+    python respeaker_4mic_array.py
+    ``` 
+
+<p align="center">
+<img alt="APAr" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/APA.png width=382 hight=287>
+
  
  
 </details>
+
+
+
+<details id=1>
+<summary><h2>Step 2: Picovoice voice control</h2></summary>
+ 
+1. Set up
+
+    :point_down: Install pyaudio driver and Picovoice demo for Respeaker
+&nbsp;
+ 
+    ```
+    pip3 install pyaudio
+    pip3 install pvrespeakerdemo
+    ``` 
+
+
+    :runner: Run the Picovoice demo 
+&nbsp;
+ 
+    ```
+    picovoice_respeaker_demo
+    ``` 
+ 
+
+    The program will open in the terminal and speak the keyword "Picovoice" into the microphone, the system will capture the keyword, wait for the user to say the command and complete the command.
+
+    :speaking_head: Try to say the keyword “Picovoice” and the command “turn on the lights”.
+
+ 
+<p align="center">
+<img alt="Terminal1" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/terminal1.png width=544 hight=322>
+
+ 
+<p align="center">
+<img alt="Terminal2" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/terminal2.png width=544 hight=125>
+ 
+<p align="center">
+<img alt="LEDblue" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi.io/blob/main/img/LEDblue.png width=382 hight=287>
+
+ 
+2. Auto start
+
+    Set Pi to automatically open the command line after startup, and automatically execute the program in it
+
+    :open_file_folder: Create a new folder to autostart
+&nbsp;
+ 
+    ```
+    cd /home/pi/.config 
+    mkdir autostart
+    cd autostart
+    ``` 
+
+ 
+    :computer: Create a "pico.desktop" in "autostart" folder and type the text follow
+&nbsp;
+ 
+    ```
+    [Desktop Entry]
+    Name=PChost
+    Comment=Python Program
+    Exec=lxterminal -e picovoice_respeaker_demo
+    Icon=/home/pi/python_games/picovoice.png
+    Terminal=false
+    MultipleArgs=false
+    Type=Application
+    Categories=Application;Development;
+    StartupNotify=true
+    ``` 
+
+3. Voice commands
+
+    :speaking_head: Wake word
+&nbsp;
+ 
+    ```
+    Picovoice
+    ``` 
+
+    :speaking_head: Ture on/off the light
+&nbsp;
+ 
+    ```
+    [switch, turn] [on, off] (all) (the) [lights, light]
+    [switch, turn] (all) (the) [light, lights] [on, off]
+    ``` 
+
+    :speaking_head: Change the color
+&nbsp;
+ 
+    ```
+    [change, set, switch] (all) (the) (light, lights) (color) (to) [blue, green, orange, pink, purple, red, white, yellow]
+    ``` 
+</details>
+
+
+
