@@ -387,7 +387,7 @@ This research results in increased hearing aid processing power and programmabil
 
 3. Start ODAS studio
 
-    :pushpin: In addition to the sound source, the detector can also observe the Raspberry Pi's real- time performance (CPU usage, CPU temperature, memory usage, etc.). Filter function can be set to control the accuracy of source location and tracking. Source Elevation refers to the elevation of the sound source, and Source Azimut refers to the position of the source around the Z axis relative to the X axis. Active Sources Locations allows direct observation of sphere and sound card in real time.
+    In addition to the sound source, the detector can also observe the Raspberry Pi's real- time performance (CPU usage, CPU temperature, memory usage, etc.). Filter function can be set to control the accuracy of source location and tracking. Source Elevation refers to the elevation of the sound source, and Source Azimut refers to the position of the source around the Z axis relative to the X axis. Active Sources Locations allows direct observation of sphere and sound card in real time.
 &nbsp;
 &nbsp;
 
