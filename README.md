@@ -368,7 +368,7 @@ This research results in increased hearing aid processing power and programmabil
 2. For ODAS Server:
 &nbsp;
 
-    :computer: Install Node.js v12
+    :point_down: Install Node.js v12
 &nbsp;
  
     ```
