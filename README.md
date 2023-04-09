@@ -350,4 +350,57 @@ This research results in increased hearing aid processing power and programmabil
 </details>
 
 
+<details id=1>
+<summary><h2>Step 3: Sound source localization and tracking</h2></summary>
+
+1. For ODAS Client:
+&nbsp;
+ 
+    ```
+    sudo apt-get install libfftw3-dev libconfig-dev libasound2-dev libgconf-2-4 sudo apt-get install cmake
+    git clone https://github.com/introlab/odas.git
+    mkdir odas/build
+    cd odas/build
+    cmake ..
+    make
+    ``` 
+
+2. For ODAS Server:
+&nbsp;
+
+    :computer: Install Node.js v12
+&nbsp;
+ 
+    ```
+    curl -sL https://deb.nodesource.com/setup_12.x | 
+    sudo bash - sudo apy-get install -y nodejs
+    ``` 
+
+    :scissors: Clone the repository
+&nbsp;
+ 
+    ```
+    git clone https://github.com/introlab/odas_web.git 
+    cd odas_web/
+    npm install
+    ``` 
+
+3. Start ODAS studio
+
+    :pushpin: In addition to the sound source, the detector can also observe the Raspberry Pi's real- time performance (CPU usage, CPU temperature, memory usage, etc.). Filter function can be set to control the accuracy of source location and tracking. Source Elevation refers to the elevation of the sound source, and Source Azimut refers to the position of the source around the Z axis relative to the X axis. Active Sources Locations allows direct observation of sphere and sound card in real time.
+&nbsp;
+&nbsp;
+
+    ```
+    npm start
+    ``` 
+
+<p align="center">
+<img alt="ODAS" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi/blob/main/img/ODAS.PNG width=606 hight=404>
+
+    
+ 
+    
+
+</details>
 
