@@ -29,7 +29,7 @@ This research results in increased hearing aid processing power and programmabil
 1. Go to [Raspberry Pi OS](https://www.raspberrypi.com/software/), obtain and install the .img file for Raspberry Pi Imager.
 2. Go to [Index of Raspbian](https://downloads.raspberrypi.org/raspbian/images/), select 'raspbian-2020-02-14', download '2020-02-13-raspbian-buster.zip'.
 
-     _The reason for not downloading the latest version is that ReSpeaker 4-Mic Array can only be adapted to the 2020-02-13 version of Raspbian._
+   > The reason for not downloading the latest version is that ReSpeaker 4-Mic Array can only be adapted to the 2020-02-13 version of Raspbian.
 
 3. Upload the file of Pi OS to Raspberry Pi Imager. Make sure to check the target location of the SD Card that is located on the home page of Raspberry Pi OS Imager. Click 'WRITE' to install.
 
@@ -259,6 +259,8 @@ This research results in increased hearing aid processing power and programmabil
 <details id=1>
 <summary><h2>Step 2: Picovoice voice control</h2></summary>
  
+> [Picovoice](https://picovoice.ai) is a real-time wake word detection platform for Raspberry Pi systems, running fully Automatic Speech Recognition (ASR) to perform hot word detection. Users can customize wakeup words freely and use without network connection. For keyword spotting, traditional neural networks use multi-digit numbers for calculation. Picovoice uses very short numbers, such as binary ones and zeros, so speech capture can run on chips that are much slower. Running on Raspberry PI consumes less than 10% of the CPU.
+ 
 1. Set up
 
     :point_down: Install pyaudio driver and Picovoice demo for Respeaker
@@ -353,6 +355,8 @@ This research results in increased hearing aid processing power and programmabil
 <details id=1>
 <summary><h2>Step 3: Sound source localization and tracking</h2></summary>
 
+> For sound source localization and tracking, the main artificial intelligence framework used in this project is the new [Open embedded Audition System](https://github.com/introlab/odas). The working principle of this framework is compressed space into a unit sphere, the sound card is taken as the center of the sphere and the sound source position of the surrounding environment is detected with a radius of one meter. This framework uses microphone array geometry to perform sound source localization. This method calculates the Steered-Response Power with Phase Transform (SRP-PHAT) by using the difference between the arriving time, which is obtained by using the sum of GCC- PHAT for each pair of microphones (TDOA)-related cross-correlation values. For more imformation, check the article "[ODAS: Open embeddeD Audition System](https://arxiv.org/pdf/2103.03954.pdf)". 
+ 
 1. For ODAS Client:
 &nbsp;
  
@@ -387,14 +391,16 @@ This research results in increased hearing aid processing power and programmabil
 
 3. Start ODAS studio
 
-    In addition to the sound source, the detector can also observe the Raspberry Pi's real- time performance (CPU usage, CPU temperature, memory usage, etc.). Filter function can be set to control the accuracy of source location and tracking. Source Elevation refers to the elevation of the sound source, and Source Azimut refers to the position of the source around the Z axis relative to the X axis. Active Sources Locations allows direct observation of sphere and sound card in real time.
-&nbsp;
-&nbsp;
 
+    :keyboard: Tap in terminal
+&nbsp;
+ 
     ```
     npm start
     ``` 
 
+    > In addition to the sound source, the detector can also observe the Raspberry Pi's real- time performance (CPU usage, CPU temperature, memory usage, etc.). Filter function can be set to control the accuracy of source location and tracking. Source Elevation refers to the elevation of the sound source, and Source Azimut refers to the position of the source around the Z axis relative to the X axis. Active Sources Locations allows direct observation of sphere and sound card in real time.
+ 
 <p align="center">
 <img alt="ODAS" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi/blob/main/img/ODAS.PNG width=606 hight=404>
 
