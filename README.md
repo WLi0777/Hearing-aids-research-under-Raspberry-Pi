@@ -228,7 +228,7 @@ This research results in increased hearing aid processing power and programmabil
 
 8. APA102 LED
 
-    This section is a simple test to see if the LEDs on the sound card are working.
+    > This section is a simple test to see if the LEDs on the sound card are working.
 
     :pushpin: Install spidev gpiozero and pixel
 &nbsp;
@@ -280,7 +280,7 @@ This research results in increased hearing aid processing power and programmabil
     ``` 
  
 
-    The program will open in the terminal and speak the keyword "Picovoice" into the microphone, the system will capture the keyword, wait for the user to say the command and complete the command.
+    > The program will open in the terminal and speak the keyword "Picovoice" into the microphone, the system will capture the keyword, wait for the user to say the command and complete the command.
 
     :speaking_head: Try to say the keyword “Picovoice” and the command “turn on the lights”.
 
@@ -298,7 +298,7 @@ This research results in increased hearing aid processing power and programmabil
  
 2. Auto start
 
-    Set Pi to automatically open the command line after startup, and automatically execute the program in it
+    > Set Pi to automatically open the command line after startup, and automatically execute the program in it
 
     :open_file_folder: Create a new folder to autostart
 &nbsp;
