@@ -406,9 +406,17 @@ This research results in increased hearing aid processing power and programmabil
 <p align="center">
 <img alt="ODAS" src=https://github.com/WLi0777/Hearing-aids-research-under-Raspberry-Pi/blob/main/img/ODAS.PNG width=606 hight=404>
 
-    
- 
-    
+  
 
 </details>
 
+
+
+<details id=1>
+<summary><h2>Step 4: Alexa voice assistant</h2></summary>
+
+
+
+
+
+</details>
