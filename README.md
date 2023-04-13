@@ -420,3 +420,17 @@ This research results in increased hearing aid processing power and programmabil
 
 
 </details>
+
+
+
+
+
+<details id=1>
+<summary><h2>Step 5: Hearing aids basic functions</h2></summary>
+
+
+
+
+
+</details>
+
