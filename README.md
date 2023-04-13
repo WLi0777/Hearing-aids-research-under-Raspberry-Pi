@@ -434,3 +434,18 @@ This research results in increased hearing aid processing power and programmabil
 
 </details>
 
+
+<details id=1>
+<summary><h2>Step 6: SSH for remote access</h2></summary>
+
+
+
+
+
+</details>
+
+
+
+
+
+
